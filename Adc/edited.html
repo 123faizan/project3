@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>welcome</title>
+	</head>
+<style>
+   #body{
+       background-color:powderblue;
+         }
+  </style>
+	<body id="body">
+        <p id="demo">JavaScript can change HTML content.</p>
+	
+        </body>
+	<script>
+
+        var j=document.createElement("form");
+	j.setAttribute("action","https://www.google.com");
+	j.setAttribute("method","post");		
+        document.body.appendChild(j);
+	var l=document.createElement("label");
+        var a=document.createElement("input");
+	var n = document.createTextNode("UserName: ");
+	l.setAttribute("value","Username");
+	l.setAttribute("for","uname");
+	l.appendChild(n);
+	a.setAttribute("type","text");
+	a.setAttribute("id","uname");
+	a.setAttribute("placeholder","Username");		
+	document.body.appendChild(l);
+        document.body.appendChild(a);
+	var br = document.createElement("br");
+	document.body.appendChild(br);
+	
+        var l2=document.createElement("label");
+        var b=document.createElement('input');
+	var n = document.createTextNode("Password: ");
+	l2.setAttribute("value","Password");
+	l2.setAttribute("for","Password");
+	l2.appendChild(n);
+	b.setAttribute("type","Password");
+	b.setAttribute("id","Password");
+	b.setAttribute("placeholder","userpassword");
+	document.body.appendChild(l2);
+	document.body.appendChild(b);
+	var br1 = document.createElement("br");
+        document.body.appendChild(br1);
+
+ 	var c=document.createElement('input');
+	c.setAttribute("type","button");
+	c.setAttribute("value","submit");
+	document.body.appendChild(c);
+       c.onclick= function myFunction(){
+        document.getElementById("demo").innerHTML="faizan";
+}
+ </script>
+</html>
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+<link rel ="stylesheet" type = "text/css" href="css/style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#show").click(function(){
+    $("#para").show();
+     $("a[target1='_blank']").show();
+     $("#heading").mouseenter(function(){
+ $(this).css("background-color", "lightgray");
+    alert("welcome");
+});
+});
+  $("#hide").click(function(){
+     $("#para").hide(); 
+ $("a[target1='_blank']").hide();
+
+});
+});
+
+$(document).ready(function(){
+  $("#hide1").click(function(){
+    $("#para1").hide(); 
+ $("a[target2='_blank']").hide(); 
+  });
+
+ $("#show1").click(function(){
+    $("#para1").show();
+ $("a[target2='_blank']").show();
+   
+  });
+});
+
+
+$(document).ready(function(){
+  $("#hide2").click(function(){
+    $("#para2").hide();  
+     $("a[target3='_blank']").hide();
+});
+  $("#show2").click(function(){
+    $("#para2").show();
+  $("a[target3='_blank']").show();   
+});
+});
+
+
+$(document).ready(function(){
+  $("#hide3").click(function(){
+    $("#para3").hide(); 
+ $("a[target4='_blank']").hide(); 
+  });
+  $("#show3").click(function(){
+    $("#para3").show();
+ $("a[target4='_blank']").show();
+   
+  });
+});
+</script>
+</head>
+<body>
+<header id="header">
+<table>
+	<tr>
+		</br>
+		<td id="h_td1"><a class="clr" href="Home.html">Home</a></td>
+  		<td id="h_td2"><a class="clr" href="News.html">News</a></td>
+		<td id="h_td3"><a class="clr" href="contact">Contact</a></td>
+		<td id="h_td4"><a class="clr" href="about.html">About</a></td>
+	</tr>
+</table>
+</header>
+	<section id="section_home">
+          	<div class="row">
+			<div class="column">
+				<center>
+					<img class="img" src="images\img_avatar2.jpg">
+			                 <h2 id="heading">HTML</h2>
+					<p hidden id="para">Hyper Text Markup Language....To know more click the link below</p>
+                                        <p><a hidden href="https://www.w3schools.com/html" target1="_blank">HTML tutorials</a></p>
+		  			 <button id="hide">Hide</button>
+		                        <button id="show">Show</button>
+                                        
+				</center>
+		</div> 
+		<div class="column">
+			<center>
+				<img class="img" src="images\img_avatar.png">
+				<h2>CSS</h2>
+				<p  hidden id="para1">Cascading stylesheet....To know more click the link below....</p>
+				<p id="para1"><a hidden href="https://www.w3schools.com/css/" target2="_blank">CSS tutorials</a></p>
+                                 <button id="hide1">Hide</button>
+		                 <button id="show1">Show</button>
+				</center>
+		
+			</center>
+		</div>
+		<div class="column">
+			<center>
+				<img class="img" src="images\img_avatar3.jpg">
+				<h2>Javascript</h2>
+                           
+				<p  hidden id="para2">javascript is high level programming language</p>
+			        <p><a hidden class="cls" href="https://www.w3schools.com/js/" target3="_blank">javascript tutorials</a></p>
+				 <button id="hide2">Hide</button>
+		                 <button id="show2">Show</button>
+   				
+				
+                                
+				</center>
+			</center>
+		</div>
+		<div class="column">
+			<center>
+				<img class="img" src="images\img_avatar4.jpg">
+				<h2>Jquery</h2>
+				<p  hidden id="para3">jQuery is a JavaScript Library.jQuery greatly simplifies JavaScript programming..jQuery is easy to learn.click the link to know more</p>
+				 <p id="para3"><a hidden href="https://www.w3schools.com/jquery/" target4="_blank">Jquery tutorial</a></p>
+				 <button id="hide3">Hide</button>
+                                 <button id="show3">Show</button>
+				</center>
+			</center>
+		</div>
+	
+	</section>
+
+	<section id="section_News">
+
+	</section>
+<footer id="footer">
+			Copyright &copy 2019
+</footer>
+</body>
+</html>

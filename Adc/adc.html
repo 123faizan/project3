@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body background="images\ref.jpg">
+<center><form name="login" action="Home.html " method="post" aligh="center">
+UserName:<input type="text" name="Username" placeholder="enter name" align="center">
+<br>
+<br>
+Password:<input type="Password" name="Password" placeholder="enter password" align="center">
+<br>
+<br>
+<input type="submit" name="submit" onclick="return check(this.form)" value="submit">
+</center>
+</form>
+<script>
+function check(form)
+{
+if(form.Username.value=="faizan" && form.Password.value=="shakeeb"){
+return true;
+}
+else
+{
+alert("enter correct credientials");
+return false;
+}
+}
+</script>
+</body>
+</html>
